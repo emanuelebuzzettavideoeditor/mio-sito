@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajjn — Video Editor</title>
+    <meta name="description"
+        content="Portfolio di Emanuele Buzzetta, video editor in arte Rajjn. Specializzato in contenuti YouTube e non solo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css?v=1.3" />
+</head>
+
+<body>
+
+    <!-- ─── CUSTOM CURSOR ─── -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ─── SIDE NAV ─── -->
+    <nav id="side-nav" aria-label="Navigazione sezioni">
+        <ul>
+            <li><a href="#hero"      class="side-link" data-section="hero">      <span class="side-dot"></span><span class="side-label">Home</span></a></li>
+            <li><a href="#about"     class="side-link" data-section="about">    <span class="side-dot"></span><span class="side-label">About</span></a></li>
+            <li><a href="#showreel" class="side-link" data-section="showreel"> <span class="side-dot"></span><span class="side-label">Showreel</span></a></li>
+            <li><a href="#portfolio" class="side-link" data-section="portfolio"><span class="side-dot"></span><span class="side-label">Portfolio</span></a></li>
+            <li><a href="#contact"   class="side-link" data-section="contact">  <span class="side-dot"></span><span class="side-label">Contatti</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-content">
+            <div class="hero-playhead reveal-up">
+                <div class="playhead-line"></div>
+                <div class="playhead-head"></div>
+            </div>
+            <img src="assets/logo.png" alt="Rajjn Logo" class="hero-logo reveal-up" />
+            <p class="hero-eyebrow reveal-up delay-1">Emanuele Buzzetta</p>
+            <h1 class="hero-title reveal-up delay-2">
+                <span>R</span><span>A</span><span>J</span><span>J</span><span>N</span>
+            </h1>
+            <p class="hero-typed reveal-up delay-2">
+                <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+            </p>
+            <a href="#showreel" class="hero-scroll-hint" aria-label="Scorri in basso">
+                <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-visual reveal-left">
+                <div class="about-photo-wrapper">
+                    <img src="assets/FotoProfilo.png" alt="Emanuele Buzzetta" class="about-photo" />
+                </div>
+                <div class="about-stats" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="stat">
+                        <span class="stat-num">100+</span>
+                        <span class="stat-label">Video montati</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Anni di esperienza</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <span class="section-tag">About</span>
+                <h2>Emanuele <span class="gold">"Rajjn"</span> Buzzetta</h2>
+                <p class="about-lead">Video Editor | Palermo, classe 2003</p>
+                <p>
+                    Tutto è partito a Palermo, per pura curiosità. Ho passato ore a montare cose a caso, sperimentando da solo solo per il gusto di vedere cosa ne usciva fuori. Quella voglia di smanettare è diventata il mio lavoro e mi ha portato a curare i video di creator come <strong>Poly</strong>, <strong>IlDelmo</strong> e <strong>Leo</strong>, oltre a firmare progetti per brand come <strong>eBay</strong> in occasione della Milan Games Week.
+                </p>
+                <p>
+                    Oggi il mio obiettivo è espandermi: dai documentari agli short-form content, fino ai video per eventi e brand che vogliono distinguersi. Amo questo lavoro e cerco storie che meritano di essere raccontate nel modo giusto.
+                </p>
+                <p class="about-lead" style="margin-top: 24px;">
+                    <em>Se ne hai una, costruiamola insieme.</em>
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h4>Software</h4>
+                        <ul>
+                            <li>Adobe Premiere Pro</li>
+                            <li>CapCut Pro</li>
+                            <li>After Effects</li>
+                            <li>Audition</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Specialità</h4>
+                        <ul>
+                            <li>YouTube Content</li>
+                            <li>Color Grading</li>
+                            <li>Motion Graphics</li>
+                            <li>Short-form Video</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Lavoriamo insieme →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SHOWREEL ─── -->
+    <section id="showreel" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Showreel</span>
+                <h2>Il mio miglior lavoro,<br />in 60 secondi.</h2>
+            </div>
+            <div class="reel-wrapper reveal-up delay-1">
+                <div class="reel-frame">
+                    <!-- Sostituisci l'URL con il tuo reel su YouTube/Vimeo -->
+                    <iframe id="reelIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                        title="Rajjn Showreel" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PORTFOLIO ─── -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Portfolio</span>
+                <h2>Progetti selezionati</h2>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs reveal-up delay-1">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="short">Short / Reel</button>
+                <button class="filter-btn" data-filter="brand">Brand</button>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <div class="portfolio-card reveal-up" data-category="youtube"
+                    data-video="https://www.youtube.com/embed/DhsHEke1wz4">
+                    <div class="card-thumb">
+                        <img src="assets/EldenRingRandomizerThumb.png" alt="Elden Ring Randomizer Thumbnail" class="thumb-img" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="card-overlay">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">YouTube</span>
+                        <h3>Ho FINITO Elden Ring COMPLETAMENTE RANDOMIZZATO!</h3>
+                        <p>Video narrativo. Ho curato l'intero processo creativo: dall'ideazione dello script all'editing finale ritmato da puro storytelling.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal-up delay-1" data-category="brand"
+                    data-video="https://www.youtube.com/embed/u7U0nabmv_w">
+                    <div class="card-thumb">
+                        <img src="assets/coughee-thumb.jpg" alt="Coughee Thumbnail personalizzata" class="thumb-img" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="card-overlay">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">Brand / YouTube</span>
+                        <h3>Coughee</h3>
+                        <p>Responsabile esclusivamente della fase di montaggio per tutti i video del canale. Elaborazione del pacing dell'intervista e integrazione armoniosa delle riprese secondarie per massimizzare la retention.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal-up delay-2" data-category="short"
+                    data-video="https://www.instagram.com/p/DRKB-ZciNbH/embed">
+                    <div class="card-thumb">
+                        <div style="position: absolute; inset: -15px; background: url('assets/delmo-thumb.png') center/cover; opacity: 0.4;"></div>
+                        <img src="assets/delmo-thumb.png" alt="Delmo eBay Reel Thumbnail" class="thumb-img" style="position: relative; width: 100%; height: 100%; object-fit: contain;">
+                        <div class="card-overlay" style="z-index: 2;">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">Short / Reel / Brand</span>
+                        <h3>Delmo x eBay - Milan Games Week</h3>
+                        <p>Instagram Reel realizzato per Delmo, in collaborazione con eBay. Tagli frenetici e interazioni dinamiche con ospiti speciali del calibro di Kasumisen e Sabaku no Maiku.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal-up delay-3" data-category="youtube"
+                    data-image="assets/poly-stats.png">
+                    <div class="card-thumb">
+                        <div style="position: absolute; inset: -15px; background: url('assets/poly-stats.png') center/cover; opacity: 0.3;"></div>
+                        <img src="assets/poly-stats.png" alt="Statistiche Canale Poly" class="thumb-img" style="position: relative; width: 100%; height: 100%; object-fit: contain;">
+                        <div class="card-overlay" style="z-index: 2;">
+                            <button class="play-btn" aria-label="Ingrandisci immagine">🔍</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">Channel Management / YouTube</span>
+                        <h3>Canale YouTube: Poly</h3>
+                        <p>Gestione strategica a 360° del canale YouTube: decisione del piano editoriale (cosa esce e quando), ottimizzazione SEO, scrittura di titoli e descrizioni mirate per massimizzare il CTR.</p>
+                    </div>
+                </div>
+
+
+
+            </div><!-- /portfolio-grid -->
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section section-dark">
+        <div class="container contact-grid">
+            <div class="contact-info reveal-left">
+                <span class="section-tag">Contatti</span>
+                <h2>Hai un progetto<br />in mente?</h2>
+                <p>Scrivimi.</p>
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/rajjn17/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        Instagram
+                    </a>
+
+                    <a href="mailto:emanuelebuzzettavideoeditor@gmail.com" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        Email
+                    </a>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="container footer-inner">
+            <span class="footer-logo">RAJJN</span>
+            <p>© 2026 Emanuele Buzzetta · Tutti i diritti riservati</p>
+            <a href="#hero" class="back-top">↑ Torna su</a>
+        </div>
+    </footer>
+
+    <!-- ─── VIDEO MODAL ─── -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Video player">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Chiudi">✕</button>
+            <div class="modal-video">
+                <iframe id="modalIframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="display: none;"></iframe>
+                <img id="modalImageElem" src="" alt="Zoom immagine" style="display: none; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+
+</html>
