@@ -25,7 +25,6 @@
         <ul>
             <li><a href="#hero"      class="side-link" data-section="hero">      <span class="side-dot"></span><span class="side-label">Home</span></a></li>
             <li><a href="#about"     class="side-link" data-section="about">    <span class="side-dot"></span><span class="side-label">About</span></a></li>
-            <li><a href="#showreel" class="side-link" data-section="showreel"> <span class="side-dot"></span><span class="side-label">Showreel</span></a></li>
             <li><a href="#portfolio" class="side-link" data-section="portfolio"><span class="side-dot"></span><span class="side-label">Portfolio</span></a></li>
             <li><a href="#contact"   class="side-link" data-section="contact">  <span class="side-dot"></span><span class="side-label">Contatti</span></a></li>
         </ul>
@@ -48,7 +47,7 @@
             <p class="hero-typed reveal-up delay-2">
                 <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
             </p>
-            <a href="#showreel" class="hero-scroll-hint" aria-label="Scorri in basso">
+            <a href="#portfolio" class="hero-scroll-hint" aria-label="Scorri in basso">
                 <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
@@ -110,25 +109,6 @@
         </div>
     </section>
 
-    <!-- ─── SHOWREEL ─── -->
-    <section id="showreel" class="section section-dark">
-        <div class="container">
-            <div class="section-header reveal-up">
-                <span class="section-tag">Showreel</span>
-                <h2>Il mio miglior lavoro,<br />in 60 secondi.</h2>
-            </div>
-            <div class="reel-wrapper reveal-up delay-1">
-                <div class="reel-frame">
-                    <!-- Sostituisci l'URL con il tuo reel su YouTube/Vimeo -->
-                    <iframe id="reelIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-                        title="Rajjn Showreel" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- ─── PORTFOLIO ─── -->
     <section id="portfolio" class="section">
@@ -144,6 +124,7 @@
                 <button class="filter-btn" data-filter="youtube">YouTube</button>
                 <button class="filter-btn" data-filter="short">Short / Reel</button>
                 <button class="filter-btn" data-filter="brand">Brand</button>
+                <button class="filter-btn" data-filter="personal">Canale Personale</button>
             </div>
 
             <!-- Cards Grid -->
@@ -180,7 +161,7 @@
                 </div>
 
                 <div class="portfolio-card reveal-up delay-2" data-category="short"
-                    data-video="https://www.instagram.com/p/DRKB-ZciNbH/embed">
+                    data-video="https://drive.google.com/file/d/1yh-jEtFFs7l7cwKeKXzk3YCROB0M5xop/preview">
                     <div class="card-thumb">
                         <div style="position: absolute; inset: -15px; background: url('assets/delmo-thumb.png') center/cover; opacity: 0.4;"></div>
                         <img src="assets/delmo-thumb.png" alt="Delmo eBay Reel Thumbnail" class="thumb-img" style="position: relative; width: 100%; height: 100%; object-fit: contain;">
@@ -196,22 +177,49 @@
                 </div>
 
                 <div class="portfolio-card reveal-up delay-3" data-category="youtube"
-                    data-image="assets/poly-stats.png">
+                    data-video="https://www.youtube.com/embed/KBIW5r5Wmpw">
                     <div class="card-thumb">
-                        <div style="position: absolute; inset: -15px; background: url('assets/poly-stats.png') center/cover; opacity: 0.3;"></div>
-                        <img src="assets/poly-stats.png" alt="Statistiche Canale Poly" class="thumb-img" style="position: relative; width: 100%; height: 100%; object-fit: contain;">
-                        <div class="card-overlay" style="z-index: 2;">
-                            <button class="play-btn" aria-label="Ingrandisci immagine">🔍</button>
+                        <img src="assets/bloodborne-thumb.png" alt="Film di Bloodborne di Poly Thumbnail" class="thumb-img" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="card-overlay">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">YouTube</span>
+                        <h3>Il Film di Bloodborne — Poly</h3>
+                        <p>Lungo documentario cinematografico dedicato all'universo di Bloodborne. Editing completo: ritmo narrativo, color grading dark e atmosfera da soulslike.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal-up delay-1" data-category="youtube"
+                    data-video="https://www.youtube.com/embed/fBqyPCR41MA">
+                    <div class="card-thumb">
+                        <img src="https://img.youtube.com/vi/fBqyPCR41MA/maxresdefault.jpg" alt="Poly Quiz Show Finale Thumbnail" class="thumb-img" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="card-overlay">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
                         </div>
                     </div>
                     <div class="card-info">
                         <span class="card-tag">Channel Management / YouTube</span>
                         <h3>Canale YouTube: Poly</h3>
-                        <p>Gestione strategica a 360° del canale YouTube: decisione del piano editoriale (cosa esce e quando), ottimizzazione SEO, scrittura di titoli e descrizioni mirate per massimizzare il CTR.</p>
+                        <p>Gestione strategica a 360° del canale YouTube: piano editoriale, ottimizzazione SEO, titoli e descrizioni mirate per massimizzare il CTR e la crescita organica.</p>
                     </div>
                 </div>
 
-
+                <div class="portfolio-card reveal-up delay-2" data-category="personal"
+                    data-video="https://www.youtube.com/embed/pPjsxOgBOiA">
+                    <div class="card-thumb">
+                        <img src="https://img.youtube.com/vi/pPjsxOgBOiA/maxresdefault.jpg" alt="RajjnFaVideo - VictorLaszlo88 Elden Ring" class="thumb-img" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="card-overlay">
+                            <button class="play-btn" aria-label="Guarda video">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-tag">Canale Personale</span>
+                        <h3>RajjnFaVideo — VictorLaszlo88 su Elden Ring</h3>
+                        <p>Highlight montato per puro piacere creativo. Ft. DarioMoccia, Enkk, Nanni e Vking. Oltre 161.000 visualizzazioni: il video di maggior successo del mio canale. <a href="https://www.youtube.com/@RajjnFaVideo" target="_blank" rel="noopener noreferrer" style="color: var(--gold); text-decoration: none; font-weight: 600;">→ Visita il canale</a></p>
+                    </div>
+                </div>
 
             </div><!-- /portfolio-grid -->
         </div>
